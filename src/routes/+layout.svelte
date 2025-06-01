@@ -16,9 +16,11 @@
   </a>
   {/snippet}
   {#snippet trail()}
-    <button class="btn preset-outlined-primary-500">
-      <Download class="h-4 w-4 mr-2" />
-      Resume
+    <button class="bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-lg p-0.5 btn hover:preset-tonal-primary">
+      <div class='flex items-center gap-2 bg-white dark:bg-transparent rounded-md h-full p-2 px-3'>
+        <Download class="h-4 w-4" />
+        Resume
+      </div>
     </button>
     <LightSwitch />
   {/snippet}

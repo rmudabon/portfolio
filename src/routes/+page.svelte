@@ -37,10 +37,6 @@
             </button>
           </div>
         </div>
-        <div class="relative">
-          <div class="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 p-8">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -48,13 +44,12 @@
       <div class="max-w-3xl mx-auto text-center space-y-6">
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
         <p class="text-lg text-muted-foreground leading-relaxed">
-          With over 5 years of experience in software development, I specialize in building modern web applications
+          With over 3 years of experience in software development, I specialize in building modern web applications
           using React, Node.js, and cloud technologies. I'm passionate about writing clean, maintainable code and
           creating user experiences that delight and engage.
         </p>
-        <p class="text-lg text-muted-foreground leading-relaxed">
-          When I'm not coding, you can find me contributing to open source projects, writing technical blog posts, or
-          exploring the latest developments in AI and machine learning.
+        <p class="text-muted-foreground leading-relaxed italic text-sm">
+          When I'm not coding, you can find me catching up to the latest technologies, creating side projects, or enjoying the world of video games!
         </p>
       </div>
     </section>

@@ -33,4 +33,4 @@
 </label>
 <input type="checkbox" id="dark-mode" class='hidden' onclick={(event) => {
   onCheckedChange(event.currentTarget.checked)
-}}>
+}} {checked}>

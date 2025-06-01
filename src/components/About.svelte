@@ -1,4 +1,4 @@
-<section id="about" class="container py-24 bg-muted/50">
+<section id="about" class="container py-24">
     <div class="max-w-3xl mx-auto text-center space-y-6">
       <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
       <p class="text-lg text-muted-foreground leading-relaxed">

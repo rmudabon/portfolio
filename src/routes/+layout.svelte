@@ -1,30 +1,54 @@
 <script lang="ts">
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
-	import ArrowLeft from '@lucide/svelte/icons/arrow-left';
-  	import Menu from '@lucide/svelte/icons/menu';
 	import '../app.css';
 	import LightSwitch from '../components/LightSwitch.svelte';
+	import { Code, Download } from '@lucide/svelte';
 
 	let { children } = $props();
 </script>
 
-<div class="max-w-6xl mx-auto p-4 h-full">
-<AppBar classes='bg-transparent' headlineClasses="sm:hidden" centerClasses="hidden sm:block">
+<div>
+<AppBar classes='bg-transparent/95 sticky top-0 z-50 backdrop-blur' headlineClasses="sm:hidden" centerClasses="flex justify-center items-center gap-4">
   {#snippet lead()}
   <a href="/" class="btn">
-    <ArrowLeft size={24} />
-</a>
+    <Code class="h-6 w-6" />
+    <span class="font-bold text-xl">Marco Dabon</span>
+  </a>
   {/snippet}
   {#snippet trail()}
-    <div class="hidden space-x-4 sm:flex">
-      <a href="/about" class="btn hover:preset-tonal-primary">About</a>
-	  <LightSwitch />
-    </div>
-    <div class="block sm:hidden">
-      <Menu size={20} />
-    </div>
+    <button class="btn preset-outlined-primary-500">
+      <Download class="h-4 w-4 mr-2" />
+      Resume
+    </button>
+    <LightSwitch />
   {/snippet}
+  <a href="#about" class="transition-colors hover:text-foreground/80">
+    About
+  </a>
+  <a href="#skills" class="transition-colors hover:text-foreground/80 ">
+    Skills
+  </a>
+  <a href="#projects" class="transition-colors hover:text-foreground/80">
+    Projects
+  </a>
+  <a href="#contact" class="transition-colors hover:text-foreground/80">
+    Contact
+  </a>
 </AppBar>
 
+<div class="container mx-auto">
 {@render children()}
+</div>
+
+<footer class="border-t bg-muted/50">
+  <div class="container py-8 mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+      <div class="flex items-center space-x-2">
+        <Code class="h-5 w-5" />
+        <span class="font-semibold">Marco Dabon</span>
+      </div>
+      <p class="text-sm text-muted-foreground">© 2024 Marco Dabon. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </div>

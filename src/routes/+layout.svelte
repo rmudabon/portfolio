@@ -7,6 +7,13 @@
 	let { children } = $props();
 </script>
 
+<style>
+  .dotted { 
+    background-image: radial-gradient(circle at 1px 1px, rgb(170, 170, 170) 1px, transparent 0);
+    background-size: 65px 65px;
+  }
+</style>
+
 <div>
 <AppBar classes='bg-transparent/95 sticky top-0 z-50 backdrop-blur' headlineClasses="sm:hidden" centerClasses="flex justify-center items-center gap-4">
   {#snippet lead()}
@@ -38,11 +45,13 @@
   </a>
 </AppBar>
 
-<div class="container mx-auto">
-{@render children()}
+<div class='dotted'>
+  <div class="container mx-auto">
+  {@render children()}
+  </div>
 </div>
 
-<footer class="border-t bg-muted/50">
+<footer class="bg-muted/50">
   <div class="container py-8 mx-auto">
     <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
       <div class="flex items-center space-x-2">

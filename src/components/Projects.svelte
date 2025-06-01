@@ -12,7 +12,7 @@
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="card p-8 card-hover preset-outlined-primary-500">
+        <div class="card p-8 card-hover preset-tonal-surface preset-outlined-primary-500">
           Coming soon...
         </div>
       </div>

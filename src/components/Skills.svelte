@@ -8,7 +8,7 @@
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <div class="card p-6 preset-outlined-primary-500 card-hover  space-y-4">
+        <div class="card p-6 preset-outlined-primary-500 card-hover preset-tonal-surface space-y-4">
           <header>
             <h3 class='h3'>Frontend</h3>
           </header>

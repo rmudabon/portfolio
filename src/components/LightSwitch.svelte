@@ -31,6 +31,6 @@
     <Sun class="w-6" />
   {/if}
 </label>
-<input type="checkbox" id="dark-mode" class='invisible' onclick={(event) => {
+<input type="checkbox" id="dark-mode" class='hidden' onclick={(event) => {
   onCheckedChange(event.currentTarget.checked)
 }}>
